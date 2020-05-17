@@ -1,0 +1,62 @@
+.about
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-flow: wrap
+    margin-top: 40px
+    &__furniture
+        position: relative
+        z-index: 1
+        text-decoration: none
+        transition: transform .2s
+        &:hover
+            transform: scale(1.03)
+        img
+            width: 100%
+        &_down
+            margin-top: 15px
+            &:hover
+                transform: none
+    &__title
+        position: absolute
+        top: 91%
+        width: 100%
+        text-align: center
+        z-index: 2
+        span
+            background-color: #ffffff
+            color: #000
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            padding: 3px 12px
+        .more
+            background-color: $background-color
+            font-size: 25px
+            color: #ffffff
+            padding: 10px 20px
+            letter-spacing: 2px
+            text-transform: initial
+        &_more
+            top: 80%
+    &__descr
+        position: absolute
+        top: 85%
+        left: 5%
+        background-color: #fff
+        width: 400px
+        text-align: start
+        font-size: 15px
+        font-weight: 400
+        color: #000
+        line-height: 20px
+        margin-bottom: 40px
+        padding: 45px 15px
+        border: 1px solid #cccccc
+        z-index: 1
+        &_reference
+            color: $background-color
+            text-decoration: none
+            text-transform: uppercase
+            &:hover
+                font-weight: 600
