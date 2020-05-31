@@ -1,16 +1,11 @@
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.24
-*/
-    #owl-demo .item{
-        margin: 3px;
-    }
-    #owl-demo .item img{
-        height: auto;
-		    height: auto;
-    margin: 0 auto;
-   
-    }
+#owl-demo .item{
+	margin: 3px;
+}
+#owl-demo .item img{
+	height: auto;
+	height: auto;
+	margin: 0 auto;
+}
 
 .owl-theme .owl-controls{
 	margin-top: 18px;
@@ -58,7 +53,7 @@
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;
-	    width: 16px;
+	width: 16px;
     height: 16px;
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
