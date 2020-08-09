@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MonblanProject</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://kit.fontawesome.com/d3bf6ba22a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_bg"></div>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Monblan">
+                    </div>
+                    <div class="info">
+                        <div class="info_title">
+                            <h1>monblanproject</h1>
+                            <h3 class="start">Start on <span>17-02-2016</span></h3>
+                        </div>
+                        <div class="info_stats">
+                            <div class="info_stats__item"><span id="posts">870</span>  posts</div>
+                            <div class="info_stats__item"><span id="followers">11,787</span>  followers</div>
+                            <div class="info_stats__item"><span id="following">112</span> following</div>
+                        </div>
+                        <div class="info_dates">
+                            <div class="info_dates__title">Date</div>
+                            <div class="info_dates__input">
+                                <input type='text' class="datepicker-here" id="date_from" placeholder="From"/>
+                                <button id="clearButton"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="info_dates__input">
+                                <input type='text' class="datepicker-here" id="date_to" placeholder="To"/>
+                                <button id="clearButton"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </header>
+        <main id="main">
+            <div class="container">
+                <section class="posts_wrapper">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link " id="grid-tab" data-toggle="tab" href="#grid" role="tab" aria-controls="grid" aria-selected="true"><i class="fas fa-th"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false"><i class="fas fa-list"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane " id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                            <div class="posts_grid">
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo7.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>12,800</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>3,100</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo4.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-play"></i></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo8.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo2.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-play"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-play"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo3.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo1.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo5.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo6.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload:</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tab-pane active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                            <div class="posts">
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo7.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo4.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo8.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo2.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo3.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo1.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo5.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="post">
+                                    <div class="post_img"><img src="img/photo6.jpg" alt="photo"></div>
+                                    <div class="post_info">
+                                        <div class="post_date">
+                                            <h4 class="post_date_from">Today</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>128</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>31</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_date">
+                                            <h4 class="post_date_to">09-08-2016</h4>
+                                            <div class="post_stat">
+                                                <div class="post_stat_likes"><i class="fas fa-heart"></i>67</div>
+                                                <div class="post_stat_coments"><i class="fas fa-comment-alt"></i>22</div>
+                                            </div>
+                                        </div>
+                                        <div class="post_up">
+                                            <h4 class="post_up__title">Image upload</h4>
+                                            <span class="post_up__date">11-04-2016</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="load_more">
+                        <a href="" class="btn_more">load more</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="footer_bg"><img src="img/bg_rb.png" alt=""></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
