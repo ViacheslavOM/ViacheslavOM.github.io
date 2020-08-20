@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Obec Mimoň">
+    <meta name="keywords" content="">
+    <meta name="description" content="Obec Mimoň">
+    <meta name="robots" content="all" lang="cs">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">    <link rel="stylesheet" href="css/style.min.css">
+    <title>Obec Mimoň</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    
+
+</head>
+<body>
+    <div class="rainbow">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="blue"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="yellow"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="red"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="row">
+            <div class="col-3">
+                <a class="header__logo" href="index.html"><img src="img/logo-1.png" alt="logo_mimon"></a>
+            </div>
+            <div class="col-sm">
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-sitemap"></i></a>
+                <a href="#"><i class="fas fa-glasses"></i></a>
+            </div>
+            <div class="col-4">
+                <div class="search">
+                    <input type='text' placeholder='Hledaný výraz'>
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CZ
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">EN</button>
+                        <button class="dropdown-item" type="button">DE</button>
+                        <button class="dropdown-item" type="button">RU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        O městě 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Otevřený úřad 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Volný čas 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Praktické informace 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kontakty
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" ><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="toggle">
+        <div class="toggle__icons">
+            <div class="toggle__icons_item ">
+                <img src="icons/attractive.png" alt="attractive">
+                <a class="toggle__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/attractive-blue.png" alt="attractive"> Kultura</a>
+            </div>
+            <div class="toggle__icons_item ">
+                <img src="icons/heart.png" alt="heart">
+                <a class="toggle__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/flower-blue.png" alt="heart">Sociální služby</a>
+            </div>
+            <div class="toggle__icons_item ">
+                <img src="icons/flower.png" alt="flower">
+                <a class="toggle__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/heart-blue.png" alt="flower">Zahradnictví</a>
+            </div>
+            <div class="toggle__icons_item ">
+                <img src="icons/book.png" alt="book">
+                <a class="toggle__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/book-blue.png" alt="book">ZŠ a MŠ</a>
+            </div>
+            <div class="toggle__icons_item ">
+                <img src="icons/music.png" alt="music">
+                <a class="toggle__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/music-blue.png" alt="music">ZUŠ</a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="news__title">
+                        Kalendář akcí
+                        <div class="news__title_logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="news__menu">
+                        <button id="btn1" class="news__menu_item">Podpoložka menu</button>
+                            <div class="news__menu_undermenu">Podpoložka</div>
+                            <div class="news__menu_undermenu">Podpoložka</div>
+                            <div class="news__menu_undermenu">Podpoložka</div>
+                        <button id="btn2" class="news__menu_item">Podpoložka menu</button>
+                            <div class="news__menu_undermenu-1">Podpoložka</div>
+                            <div class="news__menu_undermenu-1">Podpoložka</div>
+                            <div class="news__menu_undermenu-1">Podpoložka</div>
+                        <button id="btn3" class="news__menu_item">Podpoložka menu</button>
+                            <div class="news__menu_undermenu-2">Podpoložka</div>
+                            <div class="news__menu_undermenu-2">Podpoložka</div>
+                            <div class="news__menu_undermenu-2">Podpoložka</div>
+                        <button id="btn4" class="news__menu_item">Podpoložka menu</button>
+                            <div class="news__menu_undermenu-3">Podpoložka</div>
+                            <div class="news__menu_undermenu-3">Podpoložka</div>
+                            <div class="news__menu_undermenu-3">Podpoložka</div>
+                        <button class="news__menu_item">Podpoložka menu</button>
+                        <button class="news__menu_item">Podpoložka menu</button>
+                    </div>
+                    <div class="calendar" style="overflow:hidden;">
+                        <div style="overflow:hidden;">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div id="datetimepicker12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1>
+                        Nějaký nadpis podstránky – H1
+                    </h1>
+                    <h2>
+                        Historie obcí - H2
+                    </h2>
+                    <div class="news__descr">
+                        Obec je základním územním samosprávným společenstvím občanů; tvoří územní celek, který je vymezen hranicí území obce. V tomto smyslu je subjektem samosprávy a také vykonavatelem státní správy. Základní definici obce obsahuje zákon o obcích. V současnosti je území České republiky rozčleněno na 6257 obcí. Průměrná rozloha obce je 10,58 km2. 
+                        Pro dataci vzniku obcí se využívá první písemné zmínky, což je označení nejstaršího písemného dokladu, většinou se jménem sídla. Nejstarší sídla/obce jsou známy již z 10. století. Mnoho obcí bylo založeno v 11. až 14. století během velké vnitřní kolonizace. Hranice obcí byly vytyčovány již při jejich zakládání, časté jméno Újezd pochází z objetí hranice obce na koni.
+                        Přesné vymezení správních území obcí bylo zpracováno již v 18. v rámci josefinského katastru. Obce jako samosprávné jednotky vznikly v roce 1850 při vytváření moderní veřejné správy. V období předválečného Československa bylo na území Česka téměř dvakrát víc obcí než dnes, celkem 11 768. Za komunistického režimu v souvislosti se zřízením národních výborů obce ztratily faktickou právní subjektivitu, třebaže i nadále existovaly formálně volené obecní orgány. Do roku 1989 se počet obcí trvale snižoval, zejména v důsledku státem organizovaného slučování.
+                    </div>
+                    <h3>Typy obcí - H3</h3>
+                    <div class="news__descr">
+                        <img src="img/fotogalerie.jpg" alt="fotogalerie">
+                        Orgánem obce je zastupitelstvo obce a rada obce. Obec reprezentuje starosta, který stojí v čele obecního úřadu. Obec v rámci své samostatné působnosti spravuje sama záležitosti, které jsou v jejím zájmu a zájmu občan. Obecní úřad v rámci přenesené působnosti zároveň vykonává státní správu v rozsahu vyplývajícím ze zákonů.
+                    </div>
+                    <h4>Orgány obce - H4 </h4>
+                    <div class="news__descr">
+                        Schvaluje např. územní plán obce a její rozpočet, zřizuje a ruší obecní policii, rozhoduje o vyhlášení místního referenda či volí nebo odvolává starostu. Rozhodnutí zastupitelstva vykonává rada obce. Orgánem obce je zastupitelstvo obce a rada obce. Obec reprezentuje starosta, který stojí v čele obecního úřadu. Obec v rámci své samostatné působnosti spravuje sama záležitosti, které jsou v jejím zájmu a zájmu občan. 
+                        Obecní úřad v rámci přenesené působnosti zároveň vykonává státní správu v rozsahu vyplývajícím ze zákonů. V oblasti samosprávy je zastupitelstvo obce hlavním samosprávným orgánem, rozhoduje usnesením a může přijímat obecně závazné vyhlášky. Schvaluje např. územní plán obce a její rozpočet, zřizuje a ruší obecní policii, rozhoduje o vyhlášení místního referenda či volí nebo odvolává starostu. Rozhodnutí zastupitelstva vykonává rada obce.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="infocard">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Mobilní aplikace</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <a href="#"><img src="img/mobilni aplikace.png" class="card-img-top" alt="aplikace"></a>
+                        <a href="#"><img src="img/google.png" alt="google"></a>
+                        <a href="#"><img src="img/apple.png" alt="apple"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">MR Podralsko</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <a href=""><img class="podralsko" src="img/podralsko.png" class="card-img-top" alt="podralsko"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Aktuální počasí</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-day">
+                            dnes, čtvrtek<br>
+                            1. 6. 2020
+                        </div>
+                        <div class="temperature">
+                            <div class="temperature__window">
+                                <img class="sun" src="icons/sun.png" class="card-img-top" alt="sun">
+                                <div class="temperature__statistics">
+                                    <div class="temperature__day">20 °C</div>
+                                    <div class="temperture__night">12 °C</div>
+                                </div>
+                            </div>
+                            <div class="temperature__descr">
+                                Bude polojasno až oblačno.<br>
+                                Denní teploty 14 až 18°C.<br>
+                                Noční teploty 9 až 5°C.
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Fotogalerie</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <p>Náhodný výběr z galerie</p>
+                        <img src="img/fotogalerie.jpg" class="card-img-top" alt="fotogalerie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rainbow">
+        <div class="row">
+            <div class="col-3">
+                <div class="blue"></div>
+            </div>
+            <div class="col-3">
+                <div class="yellow"></div>
+            </div>
+            <div class="col-3">
+                <div class="red"></div>
+            </div>
+            <div class="col-3">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__city">
+                <p>Partnerská města</p>
+                <div class="footer__city_herb">
+                    <a href="https://www.xn--zotoryja-6ob.pl/asp/pl_start.asp?typ=14&menu=1&strona=1&ref=1&schemat="><img src="img/erb_zlotoryja.png" alt="zlotoryja"><span>Złatoryja</span></a>
+                    <a href="https://www.oelsnitz-erzgeb.com/"><img src="img/erb_oelsnitz.png" alt="oelsnitz"><span>Oelznitz</span></a>
+                    <a href="https://www.novabana.sk/"><img src="img/erb_nova_bana.png" alt="nova_bana"><span>Nová Baňa</span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer__title">
+                        Kontakty
+                    </div>
+                    <div class="footer__info">
+                        Městský úřad Mimoň <br>
+                        Mírová 120, 471 24 Mimoň III 
+                        <div class="footer__info_contact">
+                            E-mail: <a href="">podatelna@mestomimon.cz</a> 
+                            Telefon: +420 487 805 001
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer__title">
+                        Úřední hodiny
+                    </div>
+                    <div class="footer__info">
+                        Po 8:00–11:30 a 12:30–17:00 <br>
+                        St  8:00–11:30 a 12:30–17:00
+                        
+                        <div class="footer__info_contact">
+                            <a href="">Přijímané formáty digitálních dokumentů a další informace podatelny</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer__map">
+                        <iframe style="border: 2px solid #1ba300" src="https://en.frame.mapy.cz/s/lolorobave" width="100%" height="400px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        moment.locale('en', {
+                    week: { dow: 1 } 
+                });
+    
+            $('#datetimepicker12').datetimepicker({
+            inline: true,
+            sideBySide: false,
+            format: 'DD-MM-YY HH:mm',
+            stepping: 30,
+            minDate: moment()
+            });
+            $('li').remove(':odd');
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

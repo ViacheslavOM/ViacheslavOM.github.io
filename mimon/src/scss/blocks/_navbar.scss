@@ -1,0 +1,73 @@
+nav {
+    background-color: #004380;
+    width: 100%;
+    height: 70px;
+    .dropdown {
+        background-color: #004380;
+        border-right: 1px solid #408fcf;
+        position: inherit;
+        &:first-child {
+            border-left: 1px solid #408fcf;
+        }
+        .dropdown-toggle::after {
+            display:none;
+        }
+        .dropdown-toggle:focus {
+            box-shadow: none !important;
+        }
+        .dropdown-menu {
+            background-color: #004380;
+            border-radius: 0;
+            visibility: hidden;
+            padding: 15px 30px;
+            min-width: 1320px;
+            border: none;
+            .col-md-3 {
+                padding: 0;
+            }
+        }
+        .dropdown-item {
+            background-color: #0056a3;
+            color: white;
+            width: 330px;
+            height: 54px;
+            margin: 0 2px 2px 0;
+            &:hover {
+                background-color: #fbbb0e;
+                color: #004380;
+                transition: 0.5s all;
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+        .show {
+            visibility: visible;
+            transform: translate3d(-webkit-calc(100% - 5px), 70px, -webkit-calc(100% - 5px)) !important;
+        }
+        .btn {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 70px;
+            background-color: #004380 !important;
+            height: 70px;
+            list-style-type: none;
+            border: none;
+            color: #ffffff;
+            font-size: 20px;
+            font-family: "Segoe UI";
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 0;
+            &:hover {
+                background-color: #fbbb0e !important;
+                transition: 0.5s all;
+            }
+        }
+    }
+    .nav {
+        margin: 0 auto;
+    }
+}

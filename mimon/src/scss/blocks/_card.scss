@@ -1,0 +1,92 @@
+.infocard {
+    max-height: 435px;
+    .card-deck {
+        margin: 60px auto;
+        
+    }
+    .card {
+        width: 255px;
+        height: 325px;
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: linear-gradient(to right, #004380 0%, #002240 100%);
+            height: 50px;
+            padding: 0;
+            border: none;
+            img {
+                height: 50px;
+                width: 25px;
+                margin-right: 15px;
+            }
+            .card-title {
+                color: #fbbb0e;
+                font-size: 18px;
+                font-family: "Segoe UI";
+                font-weight: 700;
+                margin: 0;
+                padding: 0 20px;
+            }
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                padding: 6px 0;
+            }
+            .card-day {
+                text-align: center;
+                margin-bottom: 15px;
+                color: #4d4d4d;
+                font-family: "Segoe UI";
+                font-size: 16px;
+                font-weight: 400;
+            }
+            
+            .podralsko {
+                margin-top: 20px;
+                width: 220px;
+            }
+            .temperature {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                &__statistics {
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__descr {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                &__window {
+                    display: flex;
+                    align-items: center;
+                    .sun {
+                        height: 50px;
+                        width: 50px;
+                        margin-right: 20px;
+                    }
+                }
+                &__day {
+                    color: #4d4d4d;
+                    font-family: "Segoe UI";
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                &__night {
+                    color: #4d4d4d;
+                    font-family: "Segoe UI";
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

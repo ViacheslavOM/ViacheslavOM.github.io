@@ -1,0 +1,22 @@
+.rainbow {
+    width: 100%;
+    .col-md-3 {
+        padding: 0;
+        .blue {
+            height: 5px;
+            background-color: #0056a3;
+        }
+        .yellow {
+            height: 5px;
+            background-color: #fbbb0e;
+        }
+        .red {
+            height: 5px;
+            background-color: #b10b22;
+        }
+        .green {
+            height: 5px;
+            background-color: #1ba300;
+        }
+    }
+}

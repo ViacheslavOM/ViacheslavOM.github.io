@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Obec Mimoň">
+    <meta name="keywords" content="">
+    <meta name="description" content="Obec Mimoň">
+    <meta name="robots" content="all" lang="cs">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"> 
+    <title>Obec Mimoň</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    
+
+</head>
+<body>
+    <div class="rainbow">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="blue"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="yellow"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="red"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="row">
+            <div class="col-3">
+                <a class="header__logo" href="index.html"><img src="img/logo-1.png" alt="logo_mimon"></a>
+            </div>
+            <div class="col-sm">
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-sitemap"></i></a>
+                <a href="#"><i class="fas fa-glasses"></i></a>
+            </div>
+            <div class="col-4">
+                <div class="search">
+                    <input type='text' placeholder='Hledaný výraz'>
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CZ
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">EN</button>
+                        <button class="dropdown-item" type="button">DE</button>
+                        <button class="dropdown-item" type="button">RU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="row">
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        O městě 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Otevřený úřad 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Volný čas 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Praktické informace 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kontakty
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="dropdown-item" onclick="document.location='podstrana.html'"><i class="fas fa-dot-circle"></i>Podpoložka menu </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="promo">
+        <div class="promo__icons">
+            <div class="promo__icons_item ">
+                <img src="icons/attractive.png" alt="attractive">
+                <a class="promo__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/attractive-blue.png" alt="attractive"> Kultura</a>
+            </div>
+            <div class="promo__icons_item ">
+                <img src="icons/heart.png" alt="heart">
+                <a class="promo__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/flower-blue.png" alt="heart">Sociální služby</a>
+            </div>
+            <div class="promo__icons_item ">
+                <img src="icons/flower.png" alt="flower">
+                <a class="promo__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/heart-blue.png" alt="flower">Zahradnictví</a>
+            </div>
+            <div class="promo__icons_item ">
+                <img src="icons/book.png" alt="book">
+                <a class="promo__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/book-blue.png" alt="book">ZŠ a MŠ</a>
+            </div>
+            <div class="promo__icons_item ">
+                <img src="icons/music.png" alt="music">
+                <a class="promo__icons_descr" href="https://mestomimon.cz/kultura-sport-a-turistika/"><img src="icons/music-blue.png" alt="music">ZUŠ</a>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar">
+        <div class="card-deck">
+            <form class="card" action="http://95.85.215.233:8080/Gordic/Ginis/App/UDE01/Seznam.aspx" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>
+                        <h5>Úřední deska</h5>
+                </button>
+            </form>
+
+            <form class="card" action="https://mestomimon.cz/otevrena-radnice/formulare-a-zadosti/" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>                
+                        <h5>Formuláře</h5>
+                </button>
+            </form>
+            
+            <form class="card" action="https://mestomimon.cz/mestsky-urad/hlaseni-rozhlasu/" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>                
+                        <h5>Hlášení rozhlasu</h5>
+                </button>
+            </form>
+            
+            <form class="card" action="https://mestomimon.cz/sluzby-podnikani-a-bydleni/" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>                
+                        <h5>Bydlení</h5>
+                </button>
+            </form>
+            
+            <form class="card" action="https://mestomimon.cz/kultura-sport-a-turistika/" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>                
+                        <h5>Kultura</h5>
+                </button>
+            </form>
+            
+            <form class="card" action="http://www.policie-cr.cz/mestska-policie/mimon-296.html" target="_blank">
+                <button>
+                    <div class="toolbar__logo">
+                        <img src="img/logo.png" class="card-img-top" alt="img_logo">
+                    </div>
+                        <h5>Městská policie</h5>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div class="noviny">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="noviny__title">
+                        Aktuality
+                        <div class="noviny__title_logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="noviny__aktuality">
+                        <div class="noviny__img">
+                            <a href=""><img src="img/aktuality-1.jpg" alt="aktuality"></a>
+                        </div>
+                        <div class="noviny__popis">
+                            <div class="noviny__popis_title">
+                                <a href="">VÝSTAVA „SVĚT KOSTIČEK“ 20. 6. – 29. 8. 2020</a>
+                            </div>
+                            <div class="noviny__popis_date">
+                                <i class="far fa-calendar-alt"></i>
+                                1. 6. 2020
+                            </div>
+                            <div class="noviny__popis_descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid excepturi temporibus doloremque, tempore eum cupiditate tenetur maiores vel. Ullam aliquam perferendis alias incidunt, recusandae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab in quod temporibus rem, explicabo hic....
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="noviny__aktuality">
+                        <div class="noviny__img">
+                            <a href=""><img src="img/aktuality-2.jpg" alt="aktuality"></a>
+                        </div>
+                        <div class="noviny__popis">
+                            <div class="noviny__popis_title">
+                                <a href="">KAMPAŇ REGIONY SOBĚ – PODPORA LOKÁLNÍ EKONOMIKY</a> 
+                            </div>
+                            <div class="noviny__popis_date">
+                                <i class="far fa-calendar-alt"></i>
+                                25. 5. 2020
+                            </div>
+                            <div class="noviny__popis_descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid excepturi temporibus doloremque, tempore eum cupiditate tenetur maiores vel. Ullam aliquam perferendis alias incidunt, recusandae Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ab?...
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="noviny__aktuality">
+                        <div class="noviny__img">
+                            <a href=""><img src="img/aktuality-1.jpg" alt="aktuality"></a>
+                        </div>
+                        <div class="noviny__popis">
+                            <div class="noviny__popis_title">
+                                <a href="">UPOZORNĚNÍ PRO UŽIVATELE NÁJEMNÍCH BYTŮ</a> 
+                            </div>
+                            <div class="noviny__popis_date">
+                                <i class="far fa-calendar-alt"></i>
+                                18. 5. 2020
+                            </div>
+                            <div class="noviny__popis_descr">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid excepturi temporibus doloremque, tempore eum cupiditate tenetur maiores vel. Ullam aliquam perferendis alias incidunt, recusandae ...
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-4">
+                    <div class="noviny__title">
+                        Kalendář akcí
+                        <div class="noviny__title_logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="calendar" style="overflow:hidden;">
+                        <div style="overflow:hidden;">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div id="datetimepicker12"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organization">
+                        <div class="organization__title">Kam a s čím na úřad</div>
+                        <div class="organization__info">Organizační struktura úřadu s přehledem spravovaných agend.</div>
+                    </div>
+                    <div class="support">
+                        <div class="organization__title">Podpořili nás</div>
+                        <div class="organization__info">Přehled projektů, na které byly poskytnuty prostředky od dalších subjektů.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="infocard">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Mobilní aplikace</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <a href="#"><img src="img/mobilni aplikace.png" class="card-img-top" alt="aplikace"></a>
+                        <a href="#"><img src="img/google.png" alt="google"></a>
+                        <a href="#"><img src="img/apple.png" alt="apple"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">MR Podralsko</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <a href=""><img class="podralsko" src="img/podralsko.png" class="card-img-top" alt="podralsko"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Aktuální počasí</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-day">
+                            dnes, čtvrtek<br>
+                            1. 6. 2020
+                        </div>
+                        <div class="temperature">
+                            <div class="temperature__window">
+                                <img class="sun" src="icons/sun.png" class="card-img-top" alt="sun">
+                                <div class="temperature__statistics">
+                                    <div class="temperature__day">20 °C</div>
+                                    <div class="temperture__night">12 °C</div>
+                                </div>
+                            </div>
+                            <div class="temperature__descr">
+                                Bude polojasno až oblačno.<br>
+                                Denní teploty 14 až 18°C.<br>
+                                Noční teploty 9 až 5°C.
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Fotogalerie</h5>
+                        <img src="img/logo.png" class="card-img-top" alt="logo">
+                    </div>
+                    <div class="card-body">
+                        <p>Náhodný výběr z galerie</p>
+                        <img src="img/fotogalerie.jpg" class="card-img-top" alt="fotogalerie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rainbow">
+        <div class="row">
+            <div class="col-3">
+                <div class="blue"></div>
+            </div>
+            <div class="col-3">
+                <div class="yellow"></div>
+            </div>
+            <div class="col-3">
+                <div class="red"></div>
+            </div>
+            <div class="col-3">
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__city">
+                <p>Partnerská města</p>
+                <div class="footer__city_herb">
+                    <a href="https://www.xn--zotoryja-6ob.pl/asp/pl_start.asp?typ=14&menu=1&strona=1&ref=1&schemat="><img src="img/erb_zlotoryja.png" alt="zlotoryja"><span>Złatoryja</span></a>
+                    <a href="https://www.oelsnitz-erzgeb.com/"><img src="img/erb_oelsnitz.png" alt="oelsnitz"><span>Oelznitz</span></a>
+                    <a href="https://www.novabana.sk/"><img src="img/erb_nova_bana.png" alt="nova_bana"><span>Nová Baňa</span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer__title">
+                        Kontakty
+                    </div>
+                    <div class="footer__info">
+                        Městský úřad Mimoň <br>
+                        Mírová 120, 471 24 Mimoň III 
+                        <div class="footer__info_contact">
+                            E-mail: <a href="">podatelna@mestomimon.cz</a> 
+                            Telefon: +420 487 805 001
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer__title">
+                        Úřední hodiny
+                    </div>
+                    <div class="footer__info">
+                        Po 8:00–11:30 a 12:30–17:00 <br>
+                        St  8:00–11:30 a 12:30–17:00
+                        
+                        <div class="footer__info_contact">
+                            <a href="">Přijímané formáty digitálních dokumentů a další informace podatelny</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer__map">
+                        <iframe style="border: 2px solid #1ba300" src="https://en.frame.mapy.cz/s/lolorobave" width="100%" height="400px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        moment.locale('en', {
+                    week: { dow: 1 } 
+                });
+    
+            $('#datetimepicker12').datetimepicker({
+            inline: true,
+            sideBySide: false,
+            format: 'DD-MM-YY HH:mm',
+            stepping: 30,
+            minDate: moment()
+            });
+            $('li').remove(':odd');
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

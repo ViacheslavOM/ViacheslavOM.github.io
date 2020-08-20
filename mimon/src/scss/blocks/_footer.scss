@@ -1,0 +1,48 @@
+.footer {
+    background-image: url(../img/footer-bg.jpg);
+    height: 900px;
+    &__city {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        p {
+            color: #0056a3;
+            font-size: 36px;
+            font-family: "Segoe UI";
+            font-weight: 700;
+            margin: 0 auto;
+            width: 500px;
+        }
+        &_herb {
+            display: flex;
+            text-align: center;
+            img {
+                padding: 0 90px 8px 90px;
+            }
+            span {
+                color: #0056a3;
+                font-size: 17px;
+                font-family: "Segoe UI";
+                font-weight: 700;
+            }
+        }
+    }
+    &__title {
+        color: #0056a3;
+        font-size: 24px;
+        font-family: "Segoe UI";
+        font-weight: 700;
+        margin-top: 25px;
+    }
+    &__info {
+        color: #4d4d4d;
+        margin-top: 10px;
+        &_contact {
+            margin-top: 25px;
+        }
+    }
+    &__map {
+        margin-top: 25px;
+    }
+}

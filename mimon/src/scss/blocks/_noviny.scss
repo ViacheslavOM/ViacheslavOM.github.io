@@ -1,0 +1,140 @@
+.noviny {
+    max-height: 750px;
+    &__aktuality {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__popis {
+        &_title {
+            color: #007af2;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Segoe UI";
+            text-decoration: underline;
+            margin-bottom: 8px;
+        }
+        &_date {
+            color: #004380;
+            font-family: "Segoe UI";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 16px;
+            i {
+                color: #0056a3;
+                line-height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__title {
+        color: #0056a3;
+        font-size: 28px;
+        font-family: "Segoe UI";
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        width: 350px;
+        align-items: flex-end;
+        margin-bottom: 14px;
+        &_logo {
+            img {
+                width: 25px;
+                height: 50px;
+                vertical-align: inherit;
+                margin-left: 13px;
+            }
+        }
+    }
+    &__img {
+        margin-right: 30px;
+    }
+    .calendar  {
+        margin-top: 20px;
+        width: 350px;
+        .datepicker {
+            width: 350px;
+            height: 280px;
+            th {
+                border-radius: 0;
+            }
+            tr {
+                .prev {
+                    background-color: #0056a3;
+                    color: white;
+                    height: 37px;
+                    border-bottom: 1px solid #dae6f2;
+                    border-left: 1px solid #dae6f2;
+                }
+                .next {
+                    background-color: #0056a3;
+                    color: white;
+                    height: 37px;
+                    border-bottom: 1px solid #dae6f2;
+                    border-right: 1px solid #dae6f2;
+                }
+                .picker-switch {
+                    background-color: #0056a3;
+                    color: #ffffff;
+                    font-family: "Segoe UI";
+                    font-size: 16px;
+                    font-weight: 400;
+                    height: 37px;
+                    border-bottom: 1px solid #dae6f2;
+
+                }
+                .dow {
+                    height: 35px;
+                    border: 1px solid #dae6f2;
+                    background-color: #004380;
+                    color: #ffffff;
+                    font-family: "Segoe UI";
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .day {
+                    color: #4d4d4d;
+                    font-family: "Segoe UI";
+                    font-size: 16px;
+                    font-weight: 400;
+                    border: 1px solid #dae6f2;
+                    border-radius: 0;
+                }
+                .old{
+                    background-color: #dae6f2;
+                }
+                .new {
+                    background-color: #dae6f2;
+                }
+            }
+        }
+    }
+    .organization {
+        width: 350px;
+        background-image: linear-gradient(112deg, #004380 0%, #002240 100%);
+        &__title {
+            color: #fbbb0e;
+            font-size: 28px;
+            font-family: "Segoe UI";
+            font-weight: 700;
+            padding: 15px;
+            text-align: left;
+        }
+        &__info {
+            color: #ffffff;
+            font-family: "Segoe UI";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: left;
+            padding:  0 15px 15px  15px;
+        }
+    }
+    .support {
+        width: 350px;
+        background-image: linear-gradient(112deg, #004380 0%, #002240 100%);
+        margin-top: 30px;
+    }
+}
