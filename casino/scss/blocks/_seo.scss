@@ -1,0 +1,58 @@
+.seo {
+    min-height: 550px;
+    margin-top: 90px;
+    position: relative;
+    img {
+        width: 100%;
+        min-height: 930px;
+    }
+    &__block {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 150px;
+    }
+    &__descr {
+        height: 320px;
+        width: 880px;
+        padding-right: 25px;
+        overflow: auto;
+        margin: 0 auto;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+    &_title {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+    .title-seo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+        
+    ::-webkit-scrollbar-track {
+        background-color: #21194e;
+        border-radius: 5px;
+    }
+        
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #00ffd1;
+    }
+        
+    ::-webkit-scrollbar-thumb:hover{
+        background-color:#56999f;
+        }
+    ::-webkit-scrollbar{
+        width: 9px;
+        padding-left: 25px;
+    }
+}

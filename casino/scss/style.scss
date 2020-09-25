@@ -1,0 +1,32 @@
+body {
+    background-color: #0c1022;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto; 
+}
+.row {
+    justify-content: center;
+}
+h1 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 93.6px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/popular';
+@import 'blocks/btn-view';
+@import 'blocks/title';
+@import 'blocks/new';
+@import 'blocks/recomended';
+@import 'blocks/jackpots';
+@import 'blocks/news';
+@import 'blocks/winners';
+@import 'blocks/seo';
+@import 'blocks/footer';
+@import 'blocks/media';

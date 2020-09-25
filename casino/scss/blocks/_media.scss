@@ -1,0 +1,36 @@
+@media (max-width: 1450px) {
+    .header__games_menu_item {
+        a {
+            font-size: 12px;
+        }
+    }
+    .popular__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .new__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .recommended__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .jackpots__block {
+        width: 1070px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .popular__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .new__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .recommended__games {
+        grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .jackpots__block {
+        width: 1070px;
+    }
+}
