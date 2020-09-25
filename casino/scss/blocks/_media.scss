@@ -4,17 +4,55 @@
             font-size: 12px;
         }
     }
+    .new {
+        .new-bg{
+            height: 1450px;
+        }
+        .new__block {
+            left: 0;
+            right: 0;
+        }
+    }
+    .header__games_menu {
+        padding-top: 10px;
+    }
     .popular__games {
         grid-template-columns: repeat(3, minmax(364px, 1fr));
+    }
+    .popular__games_hover {
+        left: 59px;
     }
     .new__games {
         grid-template-columns: repeat(3, minmax(364px, 1fr));
     }
+    .new__games_hover {
+        left: 65px;
+    }
     .recommended__games {
         grid-template-columns: repeat(3, minmax(364px, 1fr));
     }
+    .recommended__games_hover {
+        left: 59px;
+    }
     .jackpots__block {
-        width: 1070px;
+        right: 0;
+        left: 0;
+    }
+    .jackpots__medal {
+        img {
+            width: 400px;
+        }
+    }
+    .jackpots__bg {
+        height: 1000px;
+    }
+    .winners {
+        .slide_down_name {
+            font-size: 15px;
+        }
+        .slide_down_count {
+            font-size: 15px;
+        }
     }
 }
 @media (max-width: 1200px) {
